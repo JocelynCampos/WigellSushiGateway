@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class WSushiGatewayApplication {
 
-    public static void main(String[] args) {
-        SpringApplication.run(WSushiGatewayApplication.class, args);
-    }
+	public static void main(String[] args) {
+		SpringApplication.run(WSushiGatewayApplication.class, args);
+	}
 
 }
