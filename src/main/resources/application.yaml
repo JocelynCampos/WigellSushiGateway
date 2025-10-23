@@ -5,13 +5,16 @@ spring:
     name: wigell-sushi-gateway
   cloud:
     gateway:
-      routes:
-        - id: wigell-sushi
-          uri: http://wigellsushi:9595
-          predicates:
-            - Path=/api/wigellsushi/**
-          filters:
-            - StripPrefix=2
+      server:
+        webmvc:
+          routes:
+            - id: wigell-sushi
+              uri: http://wigellsushi:9595
+              predicates:
+                - Path=/api/wigellsushi/**
+              filters:
+                - StripPrefix=2
 
 server:
   port: 4545
+
