@@ -9,7 +9,7 @@ spring:
         webmvc:
           routes:
             - id: wigell-sushi
-              uri: http://wigellsushi:9595
+              uri: http://wigells-api:9595
               predicates:
                 - Path=/api/wigellsushi/**
               filters:
